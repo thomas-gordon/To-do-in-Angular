@@ -19,4 +19,5 @@ describe('Controller: Tasks', function () {
     it('should attach a list of onload tasks to the scope', function () {
         expect(scope.tasks.length).toBe(3);
     });
+
 });

@@ -34,6 +34,8 @@ angular.module('angularApp')
     })
 
     .controller('Delete', function ($scope, $routeParams, $location) {
-        $scope.tasks.splice($routeParams.index,1);
-        $location.path('/').replace();
+        if (confirm("Really delete?")) {
+            $scope.tasks.splice($routeParams.index,1);
+            $location.path('/').replace();
+        };
     });

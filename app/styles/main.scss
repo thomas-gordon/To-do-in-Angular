@@ -23,7 +23,6 @@ ul{
 				@include background-image(linear-gradient(#f0f0f0,#f8f8f8));
 				@include box-shadow(0 0 40px #fff inset);
 				@include transition(0.2s);
-				@include transition(0.2s);
 			}
 			em{
 				display:block;
@@ -39,7 +38,7 @@ input[type=search]{
 	width:100%;
 	height:1.5em;
 	border:0;
-	padding:1em;
+	padding:2em;
 }
 
 input[type=text]{
