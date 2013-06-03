@@ -1,0 +1,7 @@
+<input type="search" ng-model="search" placeholder="type to search?"/></div>
+
+    <ul>
+        <li ng-repeat="task in tasks | filter:search"><a href="/#/task/{{$index}}">{{task.name}} <em>{{task.details}}</em></a></li>
+    </ul>
+
+    <a href="#/add">Add new contact</a>
