@@ -26,14 +26,14 @@ angular.module('angularApp')
 
     .controller('Add', function ($scope) {
         var length = $scope.tasks.push({
-            name: 'new',
+            name: 'New Person',
             details: new Date()
         });
-        $scope.task = $scope.tasks[length -1];
+        $scope.task = $scope.tasks[length - 1];
         $scope.index = length -1;
     })
 
-    .controller('Delete', function ($scope,$routeParams,$location) {
+    .controller('Delete', function ($scope, $routeParams, $location) {
         $scope.tasks.splice($routeParams.index,1);
         $location.path('/').replace();
     });
