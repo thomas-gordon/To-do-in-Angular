@@ -15,11 +15,15 @@ angular.module('angularApp', [])
                 templateUrl: 'views/edit.html',
                 controller: 'Delete'
             })
-            .when('/', {
-                templateUrl: 'views/list.html'
-            })
             .when('/filter', {
                 templateUrl: 'views/filters.html',
                 controller: 'Filter'
-            });
+            })
+            .when('/directive', {
+                templateUrl: 'views/directives.html',
+                controller: 'Directive'
+            })
+            .when('/', {
+                templateUrl: 'views/list.html'
+            })
     });
