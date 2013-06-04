@@ -17,5 +17,9 @@ angular.module('angularApp', [])
             })
             .when('/', {
                 templateUrl: 'views/list.html'
+            })
+            .when('/filter', {
+                templateUrl: 'views/filters.html',
+                controller: 'Filter'
             });
     });

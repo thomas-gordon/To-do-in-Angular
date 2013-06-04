@@ -1,7 +1,10 @@
     <input type="search" ng-model="search" placeholder="type to search?"/>
 
     <ul>
-        <li ng-repeat="task in tasks | filter:search | orderBy:'reverse'"><a href="/#/task/{{$index}}">{{task.name | lowercase}} <em>{{ task.details | date:'yyyy-MM-DD' }}</em></a></li>
+        <li ng-repeat="task in tasks | filter:search | orderBy:'reverse' | limitTo: 8"><a href="/#/task/{{$index}}">{{task.name | lowercase}} <em>{{ task.details | date:'y m d' }}</em></a></li>
     </ul>
 
     <a href="#/add" class="btn">Add new contact</a>
+    <p>
+    <a href="#/filter" class="btn info">View filter example</a>
+    </p>
